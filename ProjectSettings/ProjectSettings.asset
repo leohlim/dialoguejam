@@ -617,7 +617,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Standalone: USE_TWINE;USE_TWINE
+    WebGL: USE_TWINE;USE_TWINE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
