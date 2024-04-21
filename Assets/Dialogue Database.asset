@@ -245,7 +245,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Bonjour Detective Luddington. Thank goodness you''re here."'
+        value: '"Bonjour, Detective Luddington. Thank goodness you''re here."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -544,12 +544,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"The victim''s wife. I had to move her to the next car. She was inconsolable.
-          From what I hear, they have been together for many years."
-
-
-          "There
-          may be other witnesses."'
+        value: '"The victim''s wife. I had to move her to the next car. She was inconsolable."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -579,7 +574,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 5
         destinationConversationID: 1
-        destinationDialogueID: 16
+        destinationDialogueID: 27
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -591,78 +586,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 497.359
         y: 385.80292
-        width: 160
-        height: 30
-    - id: 7
-      fields:
-      - title: Title
-        value: Do you have any reason to suspect she might have did it?
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: '"Unlikely. From what I gather, they were about to celebrate their
-          silver anniversary."'
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 1
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 1
-        originDialogueID: 7
-        destinationConversationID: 1
-        destinationDialogueID: 25
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 611.3156
-        y: 537.5038
         width: 160
         height: 30
     - id: 8
@@ -763,8 +686,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"What? Of course not. I am flabbergasted that you would even entertain
-          such an idea."'
+        value: '"Excellent instincts, monsieur. Treat everyone onboard as a suspect."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -804,8 +726,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 251.30478
-        y: 565.3931
+        x: 71.12457
+        y: 659.64105
         width: 160
         height: 30
     - id: 11
@@ -1003,7 +925,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -1222,7 +1144,7 @@ MonoBehaviour:
       - originConversationID: 1
         originDialogueID: 16
         destinationConversationID: 1
-        destinationDialogueID: 7
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -1232,8 +1154,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 571.42566
-        y: 461.3689
+        x: 607.78925
+        y: 489.34094
         width: 160
         height: 30
     - id: 17
@@ -1754,8 +1676,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"But I also recognize that great detectives do not rule anything
-          out. Bravo, sir!"'
+        value: '"But no, I did not."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1795,8 +1716,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 310.90286
-        y: 645.88513
+        x: 320.60498
+        y: 622.32294
         width: 160
         height: 30
     - id: 25
@@ -1826,7 +1747,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Of course, we anything is possible. And most homicides are committed
+        value: '"Of course. Anything is possible. And most homicides are committed
           by an intimate partner."'
         type: 0
         typeString: CustomFieldType_Text
@@ -1867,8 +1788,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 838.2757
-        y: 550.3649
+        x: 719.39453
+        y: 532.1831
         width: 160
         height: 30
     - id: 26
@@ -1942,9 +1863,80 @@ MonoBehaviour:
         y: 592.1119
         width: 160
         height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: '"There may be other witnesses."'
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 1
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 1
+        originDialogueID: 27
+        destinationConversationID: 1
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 501.5551
+        y: 434.4043
+        width: 160
+        height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.72150004
+    canvasZoom: 0.71499985
   syncInfo:
     syncActors: 0
     syncItems: 0
