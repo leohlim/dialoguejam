@@ -269,7 +269,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: Passthrough
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -278,7 +278,7 @@ MonoBehaviour:
         destinationDialogueID: 18
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["conductorquery"] ~= true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1358,7 +1358,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: Passthrough
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -1367,7 +1367,7 @@ MonoBehaviour:
         destinationDialogueID: 19
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["conductorquery"] ~= true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1429,7 +1429,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: Passthrough
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -1438,7 +1438,7 @@ MonoBehaviour:
         destinationDialogueID: 20
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["conductorquery"] ~= true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1500,7 +1500,7 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: Block
+      falseConditionAction: Passthrough
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 1
@@ -1509,7 +1509,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["conductorquery"] ~= true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1575,7 +1575,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["firstconvodone"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -1653,7 +1653,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 320
+        y: 318.614
         width: 160
         height: 30
     - id: 23
