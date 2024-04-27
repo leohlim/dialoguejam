@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 3344499298621113254}
   - component: {fileID: 3344499298621113255}
   m_Layer: 0
-  m_Name: Camera Trigger
+  m_Name: Camera Trigger - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
