@@ -940,11 +940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3344499298776065474, guid: 1191e04683aa2384d9ab18cc46cb9dbe, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.52290934
+      value: 0.5229094
       objectReference: {fileID: 0}
     - target: {fileID: 3344499298776065474, guid: 1191e04683aa2384d9ab18cc46cb9dbe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.11342596
+      value: 0.11342598
       objectReference: {fileID: 0}
     - target: {fileID: 3344499298776065474, guid: 1191e04683aa2384d9ab18cc46cb9dbe, type: 3}
       propertyPath: m_LocalRotation.y
@@ -952,7 +952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3344499298776065474, guid: 1191e04683aa2384d9ab18cc46cb9dbe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.17908539
+      value: -0.17908537
       objectReference: {fileID: 0}
     - target: {fileID: 3344499298776065475, guid: 1191e04683aa2384d9ab18cc46cb9dbe, type: 3}
       propertyPath: m_LookAt
@@ -3917,7 +3917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 876245315}
-  m_PathPosition: 0.7039115
+  m_PathPosition: 0.7039114
   m_PositionUnits: 2
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0
@@ -4023,7 +4023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.10832739, y: 1.35, z: -3.9999406}
+  m_LocalPosition: {x: -0.108329296, y: 1.35, z: -3.9999406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4941,7 +4941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130867555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.3383274, y: 1.3744467, z: -4.2399406}
+  m_LocalPosition: {x: -6.3383293, y: 1.3744467, z: -4.2399406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5225,7 +5225,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.51
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -8734,7 +8734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3850686592921055490, guid: 6d41c89d1a59a3e4aa5f30caa4469950, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.038180217
+      value: 0.03818022
       objectReference: {fileID: 0}
     - target: {fileID: 3850686592921055490, guid: 6d41c89d1a59a3e4aa5f30caa4469950, type: 3}
       propertyPath: m_LocalRotation.y
