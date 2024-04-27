@@ -4,8 +4,8 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f; // Adjust the speed of movement
     private CharacterController controller;
-    private Vector3 moveDirection = Vector3.zero;
     private Animator animator;
+    private float verticalVelocity = 0f;
 
     void Start()
     {
@@ -20,21 +20,27 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxisRaw("Vertical");
 
         // Set the move direction based on input
-        moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+        Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+
+        // Apply fake gravity to ensure the player stays grounded
+        if (controller.isGrounded)
+        {
+            verticalVelocity = 0f; // Reset vertical velocity
+        }
+        else
+        {
+            // Apply downward force when not grounded
+            verticalVelocity -= 9.81f * Time.deltaTime; // Adjust gravity as needed
+        }
+
+        // Combine horizontal movement with vertical velocity
+        Vector3 movement = moveDirection * moveSpeed + Vector3.up * verticalVelocity;
 
         // Set isMoving parameter in the Animator controller
         animator.SetBool("isMoving", moveDirection.magnitude > 0);
 
-        if (!controller.isGrounded)
-        {
-            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-        }
-    }
-
-    void FixedUpdate()
-    {
-        // Move the player based on the move direction
-        controller.Move(moveDirection * moveSpeed * Time.deltaTime);
+        // Move the player based on the combined movement vector
+        controller.Move(movement * Time.deltaTime);
 
         // Rotate the player based on movement direction
         if (moveDirection != Vector3.zero)

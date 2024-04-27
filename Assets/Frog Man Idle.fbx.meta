@@ -3,7 +3,37 @@ guid: fb68a637d7cdb684294ec7c2e55eada7
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Eyes
+    second: {fileID: 2100000, guid: d508f52ac0bd5484f8d32ca245ecea60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Lids
+    second: {fileID: 2100000, guid: 369ef2d7473b12a42af93c4736ebaa3f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Pants
+    second: {fileID: 2100000, guid: 40eb977f03bbe3d469fb28ecc97a8d48, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Sandals
+    second: {fileID: 2100000, guid: b1dfe42aba5d63b47b3c77a22ffe08ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Shirt
+    second: {fileID: 2100000, guid: 0fe15909ae2be594d8a86dcbfa930c78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FrogMan_Skin
+    second: {fileID: 2100000, guid: b3f3a919ecdb05645b01d23f9a806015, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
