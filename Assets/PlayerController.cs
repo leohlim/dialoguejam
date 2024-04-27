@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
@@ -6,6 +8,8 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Animator animator;
     private float verticalVelocity = 0f;
+
+    public AudioClip footstepAudio;
 
     void Start()
     {
@@ -47,5 +51,23 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.LookRotation(moveDirection);
         }
+    }
+
+    public void Footstep()
+    {
+        StartCoroutine(FootstepRoutine());
+    }
+
+    private IEnumerator FootstepRoutine()
+    {
+        AudioSource footstepSource = gameObject.AddComponent<AudioSource>();
+
+        footstepSource.pitch = Random.Range(0.55f, 1f);
+        footstepSource.clip = footstepAudio;
+        footstepSource.Play();
+
+        yield return new WaitForSeconds(footstepAudio.length);
+
+        Destroy(footstepSource);
     }
 }
