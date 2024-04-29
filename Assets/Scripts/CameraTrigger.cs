@@ -10,4 +10,9 @@ public class CameraTrigger : MonoBehaviour
     {
         parent.GetComponent<CameraSwitcher>().SwitchCamera();
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        parent.GetComponent<CameraSwitcher>().SwitchCameraMain();
+    }
 }
