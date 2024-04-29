@@ -8239,7 +8239,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Regular dialogue option"'
+        value: '"Oh shit, where the hell did you come from?"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8280,8 +8280,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 23.769485
-        y: 103.2679
+        x: 32.948032
+        y: 101.586395
         width: 160
         height: 30
     - id: 2
@@ -10094,7 +10094,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Wait, you''re the killer!"'
+        value: '"Something isn''t adding up."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -10129,8 +10129,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 291.68216
-        y: 106.34471
+        x: 224.98369
+        y: 101.30028
         width: 160
         height: 30
     entryGroups: []
