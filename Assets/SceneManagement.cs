@@ -6,7 +6,7 @@ using PixelCrushers.DialogueSystem;
 
 public class SceneManagement : MonoBehaviour
 {
-    public enum TrainScenes { BeforeMurder, AfterMurder, Night1, Night2}
+    public enum TrainScenes { BeforeMurder, AfterMurder, Arrest, Night1, Night2}
     public TrainScenes currentScene = TrainScenes.BeforeMurder;
 
     private int sceneToLoadIndex;
@@ -30,15 +30,15 @@ public class SceneManagement : MonoBehaviour
         switch (currentScene)
         {
             case TrainScenes.BeforeMurder:
-                sceneToLoadIndex = 1;
+                sceneToLoadIndex = 0;
                 break;
 
             case TrainScenes.AfterMurder:
-                sceneToLoadIndex = 2;
+                sceneToLoadIndex = 1;
                 break;
 
-            case TrainScenes.Night1:
-                sceneToLoadIndex = 3;
+            case TrainScenes.Arrest:
+                sceneToLoadIndex = 2;
                 break;
         }
     }

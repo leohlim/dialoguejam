@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18381475, g: 0.22846337, b: 0.30025986, a: 1}
+  m_IndirectSpecularColor: {r: 0.18211482, g: 0.2278133, b: 0.30738682, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2154,7 +2154,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: 19f49a781314946218dc0580cc9576d7, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 9d7cc47c1620f1742807d5a75aa2c7ca, type: 2}
 --- !u!114 &706262700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6128,7 +6128,7 @@ PrefabInstance:
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 19f49a781314946218dc0580cc9576d7, type: 2}
+      objectReference: {fileID: 11400000, guid: 9d7cc47c1620f1742807d5a75aa2c7ca, type: 2}
     - target: {fileID: 11426072, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
       propertyPath: displaySettings.dialogueUI
       value: 
