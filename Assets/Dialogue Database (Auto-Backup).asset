@@ -191,7 +191,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -205,13 +205,41 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
       typeString: 
+  - id: 4
+    fields:
+    - title: Name
+      value: realnamesiladmitted
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 5
+    fields:
+    - title: Name
+      value: montysilargumentadmit
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -8083,8 +8111,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1423.4783, y: 679.5929}
-    canvasZoom: 0.50540495
+    canvasScrollPosition: {x: 1803.8394, y: 851.1147}
+    canvasZoom: 0.95540464
   - id: 4
     fields:
     - title: Title
@@ -8201,6 +8229,12 @@ MonoBehaviour:
         destinationDialogueID: 28
         isConnector: 0
         priority: 2
+      - originConversationID: 4
+        originDialogueID: 0
+        destinationConversationID: 4
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8208,8 +8242,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 20
+        x: 153.97528
+        y: 1
         width: 160
         height: 30
     - id: 1
@@ -8227,11 +8261,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 4
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -8239,7 +8273,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: '"Oh shit! Where the hell did you come from?"'
+        value: '"Oh shit, where the hell did you come from?"'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8272,16 +8306,19 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: Variable["realnamesiladmitted"] ~= true and (Variable["montysilargumentadmit"]
-        ~= true) and (Variable["marthaargumentreveal"] ~= true)
+      conditionsString: 'Variable["realnamesiladmitted"] == false and (Variable["montysilargumentadmit"]
+        == false) and (Variable["marthaargumentreveal"] == false) and
+
+        (Variable["MetSal"]
+        == false)'
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 70.03842
+        x: 32.948032
+        y: 101.586395
         width: 160
         height: 30
     - id: 2
@@ -8352,8 +8389,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 120
+        x: 33.860283
+        y: 168.30635
         width: 160
         height: 30
     - id: 3
@@ -8441,8 +8478,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28.998993
-        y: 170
+        x: 227.60983
+        y: 222.18178
         width: 160
         height: 30
     - id: 4
@@ -8512,8 +8549,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 289
+        x: 15.779114
+        y: 256.18256
         width: 160
         height: 30
     - id: 5
@@ -9016,8 +9053,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1
-        y: 546.1073
+        x: 14.621223
+        y: 539.29663
         width: 160
         height: 30
     - id: 12
@@ -9087,8 +9124,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 212.18216
-        y: 528.08905
+        x: 230.77872
+        y: 702.0215
         width: 160
         height: 30
     - id: 14
@@ -9158,8 +9195,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 15.014008
-        y: 621.1325
+        x: 42.361862
+        y: 632.07166
         width: 160
         height: 30
     - id: 15
@@ -9507,8 +9544,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 271.87723
-        y: 350.53772
+        x: 261.32187
+        y: 347.0193
         width: 160
         height: 30
     - id: 20
@@ -9714,8 +9751,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 271.87723
-        y: 537.9209
+        x: 342.98166
+        y: 545.57825
         width: 160
         height: 30
     - id: 23
@@ -10094,7 +10131,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Something isn't adding up.
+        value: '"Something isn''t adding up."'
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -10121,21 +10158,110 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["realnamesiladmitted"] == true and (Variable["montysilargumentadmit"]
-        == true) and (Variable["marthaargumentreveal"] == true)
+      conditionsString: 'Variable["realnamesiladmitted"] == true and (Variable["montysilargumentadmit"]
+        == true) and (Variable["marthaargumentreveal"] == true) and '
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 335.2958
-        y: 63.769455
+        x: 465.64487
+        y: 53.16806
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Need anything else?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 29
+        destinationConversationID: 4
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 29
+        destinationConversationID: 4
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 29
+        destinationConversationID: 4
+        destinationDialogueID: 10
+        isConnector: 0
+        priority: 2
+      - originConversationID: 4
+        originDialogueID: 29
+        destinationConversationID: 4
+        destinationDialogueID: 23
+        isConnector: 0
+        priority: 2
+      conditionsString: (Variable["MetSal"] == true)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 234.04843
+        y: 123.394104
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 3.115326}
-    canvasZoom: 0.9630006
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.7816484
   - id: 5
     fields:
     - title: Title
@@ -14373,7 +14499,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 200.33514, y: 0}
+    canvasScrollPosition: {x: 50.883118, y: 0}
     canvasZoom: 0.7075042
   syncInfo:
     syncActors: 0
